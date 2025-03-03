@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Miles - Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Home</h1>
-    <p>Welcome to the home page.</p>
+    <div class="print-button">
+        <button onclick="printCV()"><i class="fas fa-file-pdf"></i> Export to PDF</button>
+    </div>
+
+    <div class="cv-container">
+        <header>
+            <div class="profile">
+                <!-- <div class="profile-image">
+                    <div class="image-placeholder">DM</div>
+                </div> -->
+                <div class="profile-info">
+                    <h1>Daniel Miles</h1>
+                    <h2>Sr. Front-End Developer</h2>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:danielmiles89@gmail.com">danielmiles89@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> +972-526922688</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Israel</p>
+                        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/daniel-miles-88b378b5" target="_blank">LinkedIn Profile</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="https://dmiles77.github.io/" target="_blank">Portfolio Website</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="summary">
+                <h3>About</h3>
+                <p>Software Engineer specializing in Front-End Development with a focus on building intuitive, high-performance user interfaces. Passionate about creating seamless user experiences, optimizing web performance, and maintaining high coding standards.</p>
+            </section>
+
+            <section class="experience">
+                <h3>Work Experience</h3>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Senior Front-End Developer</h4>
+                        <div class="company-date">
+                            <span class="company">Payem</span>
+                            <span class="date">2022 - Present</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Lead the development and maintenance of Payem's client architecture, driving key decisions in front-end technologies</li>
+                        <li>Ensure the platform scales effectively while maintaining high code quality standards with the best practices</li>
+                        <li>Focused on building a seamless, user-friendly experience for clients in the fintech industry</li>
+                        <li>Technologies: React, Redux, Redux-Saga, TypeScript, MUI, Playwright (for automation testing) and Styled components</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Senior Front-End Developer</h4>
+                        <div class="company-date">
+                            <span class="company">Amdocs</span>
+                            <span class="date">2015 - 2022</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Developed SaaS applications for large telecommunications clients, impacting millions of users globally</li>
+                        <li>Collaborated with cross-functional teams using Agile/Scrum methodologies (Jira)</li>
+                        <li>Key technologies: React, Redux, Saga, TypeScript, CSS, HTML5, Bootstrap, Semantic UI, JQuery, GraphQL, NodeJS</li>
+                        <li>Utilized version control systems: Git, Perforce</li>
+                        <li>Proven expertise in crafting scalable, high-performance front-end solutions</li>
+                        <li>Strong CSS skills: proficient in building responsive, user-centered interfaces from scratch</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h3>Side Projects</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>NPM Package - TreeMap for React using D3</h4>
+                            <span class="date">2025</span>
+                        </div>
+                        <p>miles-tree-map is a fully responsive Tree Map visualization component for React applications, enabling infinite drill-down into hierarchical data structures. It allows developers to easily integrate interactive and customizable tree maps into their projects.</p>
+                        <p class="project-link"><a href="https://www.npmjs.com/package/miles-tree-map" target="_blank">View on NPM</a></p>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>Chrome Extension Boilerplate</h4>
+                            <span class="date">2025</span>
+                        </div>
+                        <p>An open-source project designed for developers to quickly set up and build a new Chrome extension using React. It includes a structured UI, essential functionalities, persistent settings with `chrome.storage`, and a well-documented setup for seamless development.</p>
+                        <p class="project-link"><a href="https://github.com/dmiles77/chrome-extension-boilerplate-react" target="_blank">View on GitHub</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="two-column">
+                <section class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor's Degree</h4>
+                        <div class="school-date">
+                            <span class="school">SCE - Shamoon College of Engineering</span>
+                            <span class="date">2010 - 2015</span>
+                        </div>
+                        <p>Beer-Sheva, Israel</p>
+                        <p class="school-link"><a href="https://www.sce.ac.il/" target="_blank">Visit Website</a></p>
+                    </div>
+                </section>
+
+                <section class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Front-End Technologies</h4>
+                            <ul class="skill-list">
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Redux-Saga</li>
+                                <li>TypeScript</li>
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>UI Frameworks & Libraries</h4>
+                            <ul class="skill-list">
+                                <li>Material UI</li>
+                                <li>Styled Components</li>
+                                <li>Bootstrap</li>
+                                <li>Semantic UI</li>
+                                <li>jQuery</li>
+                                <li>D3.js</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="skill-list">
+                                <li>Git</li>
+                                <li>Perforce</li>
+                                <li>Jira</li>
+                                <li>Playwright</li>
+                                <li>GraphQL</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="contact-section">
+                <h3>Contact Information</h3>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h4><i class="fas fa-globe"></i> Website</h4>
+                        <p><a href="https://dmiles77.github.io/" target="_blank">https://dmiles77.github.io/</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4><i class="fab fa-linkedin"></i> LinkedIn</h4>
+                        <p><a href="https://linkedin.com/in/daniel-miles-88b378b5" target="_blank">daniel-miles-88b378b5</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <p><a href="mailto:danielmiles89@gmail.com">danielmiles89@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4><i class="fas fa-phone"></i> Phone</h4>
+                        <p>+972-526922688</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>References available upon request</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
