@@ -204,11 +204,14 @@
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
   }
   
   .two-column section {
     flex: 1;
     margin-bottom: 0;
+    border-bottom: none; /* Remove individual section underlines */
   }
   
   /* Education section */
@@ -634,6 +637,16 @@
     footer {
       padding: 10px;
       font-size: 8pt;
+    }
+  }
+  
+  /* Update print styles for two-column layout */
+  @media print {
+    .two-column {
+      page-break-inside: avoid;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
   
